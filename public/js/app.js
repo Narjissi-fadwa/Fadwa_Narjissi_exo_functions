@@ -77,14 +77,27 @@
 // Create a function called factorial that takes a number as a parameter and prints the factorial of that number to the console. 
 // Calculate the factorial without using recursion. Call the function with different numbers.
 
-function factorial(number) {
-    let x = number - 1
-    while (x >= 1) {
-        number *= x
-        x--
+// function factorial(number) {
+//     let x = number - 1
+//     while (x >= 1) {
+//         number *= x
+//         x--
+//     }
+//     console.log(number);
+//     return;
+// }
+// factorial(5)
+// factorial(3)
+
+//* Exercise 10: Vowel Checker
+// Create a function called isVowel that takes a character as a parameter and prints whether the character is a vowel or not to the console. Use an if-else statement. 
+// Call the function with different characters.
+
+const isVowel = (char) => {
+    (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y") ? console.log(char + " is a vowel.") : console.log(char + " is not a vowel.");
     }
-    console.log(number);
-    return;
-}
-factorial(5)
-factorial(3)
+
+isVowel("u")
+isVowel("b")
+isVowel("e")
+isVowel("c")
