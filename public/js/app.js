@@ -106,9 +106,23 @@
 // Create a function called largestInArray that takes an array of numbers as a parameter and prints the largest number in the array to the console. 
 // Use the Math.max function. Call the function with different arrays.
 
-const largestInArray = function (Array) {
-    let largest = Math.max(...Array)
-    console.log("The largest number in the array is: " + largest);
-}
+// const largestInArray = function (Array) {
+//     let largest = Math.max(...Array)
+//     console.log("The largest number in the array is: " + largest);
+// }
 
-largestInArray([44, 48, 655, 8, 155, 2]);
+// largestInArray([44, 48, 655, 8, 155, 2]);
+
+
+//* Exercise 12: Prime Number Checker
+// Create a function called isPrime that takes a number as a parameter and prints whether the number is a prime number or not to the console. 
+// Use loops and conditional statements. Call the function with different numbers.
+function isPrime(number) {
+        for (let index = 2; index < number; index++) {
+            number % index === 0 ? console.log("not prime") : console.log("prime");
+            break;
+            }
+        return;
+}
+isPrime(7);
+isPrime(4);
