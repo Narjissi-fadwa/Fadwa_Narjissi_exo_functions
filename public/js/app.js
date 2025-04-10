@@ -93,11 +93,22 @@
 // Create a function called isVowel that takes a character as a parameter and prints whether the character is a vowel or not to the console. Use an if-else statement. 
 // Call the function with different characters.
 
-const isVowel = (char) => {
-    (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y") ? console.log(char + " is a vowel.") : console.log(char + " is not a vowel.");
-    }
+// const isVowel = (char) => {
+//     (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" || char === "y") ? console.log(char + " is a vowel.") : console.log(char + " is not a vowel.");
+//     }
 
-isVowel("u")
-isVowel("b")
-isVowel("e")
-isVowel("c")
+// isVowel("u")
+// isVowel("b")
+// isVowel("e")
+// isVowel("c")
+
+//* Exercise 11: Largest in Array
+// Create a function called largestInArray that takes an array of numbers as a parameter and prints the largest number in the array to the console. 
+// Use the Math.max function. Call the function with different arrays.
+
+const largestInArray = function (Array) {
+    let largest = Math.max(...Array)
+    console.log("The largest number in the array is: " + largest);
+}
+
+largestInArray([44, 48, 655, 8, 155, 2]);
