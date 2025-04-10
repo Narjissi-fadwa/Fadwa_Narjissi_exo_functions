@@ -148,15 +148,30 @@
 //* Exercise 14: arrayIntersection 
 // Create a function called arrayIntersection that takes two arrays as parameters and returns a new array containing the common elements between them.
 
-function arrayIntersection(a, b) {
-    let commonElements = [];
-    for (let i = 0; i < a.length; i++) {
-        b.includes(a[i]) ? commonElements.push(a[i]): " " ;
+// function arrayIntersection(a, b) {
+//     let commonElements = [];
+//     for (let i = 0; i < a.length; i++) {
+//         b.includes(a[i]) ? commonElements.push(a[i]): " " ;
+//     }
+//     return commonElements;
+// }
+
+// let a = ["fadwa", 2, "other", 3, 4, true, 5, 6];
+// let b = [true, 4, "fadwa", 2, false, 1, 8];
+
+// console.log(arrayIntersection(a, b));
+
+//* Exercise: Fibonacci Sequence
+
+function fibonacci(number) {
+    let num1 = 0;
+    let num2 = 1;
+    let nextresult; 
+    for (let index = 0; index <= number; index++) {
+        console.log(num1);
+        nextresult = num1 + num2;
+        num1 = num2;
+        num2 = nextresult
     }
-    return commonElements;
 }
-
-let a = ["fadwa", 2, "other", 3, 4, true, 5, 6];
-let b = [true, 4, "fadwa", 2, false, 1, 8];
-
-console.log(arrayIntersection(a, b));
+fibonacci(5)
