@@ -131,15 +131,32 @@
 // Create a function called sumOfDigits that takes a positive integer as a parameter and calculates the sum of its digits. 
 // Print the result to the console.
 
-function sumOfDigits(int) {
-    let sum = 0;
+// function sumOfDigits(int) {
+//     let sum = 0;
 
-    while (int > 0) {
-        sum += int % 10;
-        int = Math.floor(int / 10);
+//     while (int > 0) {
+//         sum += int % 10;
+//         int = Math.floor(int / 10);
+//     }
+//     console.log("The sum of the digits is: " + sum);
+// }
+
+// sumOfDigits(123);
+// sumOfDigits(1234);
+
+
+//* Exercise 14: arrayIntersection 
+// Create a function called arrayIntersection that takes two arrays as parameters and returns a new array containing the common elements between them.
+
+function arrayIntersection(a, b) {
+    let commonElements = [];
+    for (let i = 0; i < a.length; i++) {
+        b.includes(a[i]) ? commonElements.push(a[i]): " " ;
     }
-    console.log("The sum of the digits is: " + sum);
+    return commonElements;
 }
 
-sumOfDigits(123);
-sumOfDigits(1234);
+let a = ["fadwa", 2, "other", 3, 4, true, 5, 6];
+let b = [true, 4, "fadwa", 2, false, 1, 8];
+
+console.log(arrayIntersection(a, b));
