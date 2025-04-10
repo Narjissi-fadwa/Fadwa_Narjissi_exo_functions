@@ -35,16 +35,27 @@
 // Create a function called isPalindrome that takes a string as a parameter and prints whether the string is a palindrome (reads the same backward as forward) to the console. Ignore spaces and case.
 // Use loops and conditional statements. Call the function with different strings.
 
-function isPalindrome(str) {
-    str = str.replace(/\s/g, '').toLowerCase();
-    for (let i = 0; i < str.length / 2; i++) {
-        str[i] !== str[str.length -1 - i] ? console.log("not palindrom") : console.log("Palindrom");
-        return;
-    }
+// function isPalindrome(str) {
+//     str = str.replace(/\s/g, '').toLowerCase();
+//     for (let i = 0; i < str.length / 2; i++) {
+//         str[i] !== str[str.length -1 - i] ? console.log("not palindrom") : console.log("Palindrom");
+//         return;
+//     }
+// }
+// isPalindrome("fadwa")
+// isPalindrome("racecar")
+// isPalindrome(" RacE car ")
+// isPalindrome("pop")
+// isPalindrome("po p")
+// isPalindrome(" Pop ")
+
+//* Exercise 7: Maximum of Two Numbers
+// Create a function called maxOfTwo that takes two numbers as parameters and prints the larger of the two to the console. 
+// Use an if-else statement. Call the function with different numbers.
+
+function maxOfTwo(number1 , number2) {
+    number1 > number2 ? console.log(number1) : console.log(number2);
+    return;
 }
-isPalindrome("fadwa")
-isPalindrome("racecar")
-isPalindrome(" RacE car ")
-isPalindrome("pop")
-isPalindrome("po p")
-isPalindrome(" Pop ")
+maxOfTwo(100 , 50)
+maxOfTwo(4848 , 5115)
