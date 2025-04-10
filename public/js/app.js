@@ -63,12 +63,28 @@
 //* Exercise 8: Array Sum
 // Create a function called arraySum that takes an array of numbers as a parameter and prints the sum of those numbers to the console. 
 // Use the for...of loop. Call the function with different arrays.
-function arraySum(numberArray) {
-    let sum = 0
-    for (const item of numberArray) {
-        sum += item
+// function arraySum(numberArray) {
+//     let sum = 0
+//     for (const item of numberArray) {
+//         sum += item
+//     }
+//     console.log(sum)
+//     return;
+// }
+// arraySum([1,2,3,4,5,6,7,8,9,10])
+
+//* Exercise 9: Factorial Without Recursion
+// Create a function called factorial that takes a number as a parameter and prints the factorial of that number to the console. 
+// Calculate the factorial without using recursion. Call the function with different numbers.
+
+function factorial(number) {
+    let x = number - 1
+    while (x >= 1) {
+        number *= x
+        x--
     }
-    console.log(sum)
+    console.log(number);
     return;
 }
-arraySum([1,2,3,4,5,6,7,8,9,10])
+factorial(5)
+factorial(3)
