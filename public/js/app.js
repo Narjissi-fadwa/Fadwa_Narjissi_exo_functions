@@ -25,9 +25,26 @@
 // Create a function called isEven that takes a number as a parameter and prints whether the number is even or odd to the console. 
 // Use an if-else statement. Call the function with different numbers.
 
-const isEven = function (number) {
-    number % 2 == 0 ? console.log(number + " is even") : console.log(number + " is odd")
-}
-isEven(1)
-isEven(2)
+// const isEven = function (number) {
+//     number % 2 == 0 ? console.log(number + " is even") : console.log(number + " is odd")
+// }
+// isEven(1)
+// isEven(2)
 
+//* Exercise 6: Palindrome Check
+// Create a function called isPalindrome that takes a string as a parameter and prints whether the string is a palindrome (reads the same backward as forward) to the console. Ignore spaces and case.
+// Use loops and conditional statements. Call the function with different strings.
+
+function isPalindrome(str) {
+    str = str.replace(/\s/g, '').toLowerCase();
+    for (let i = 0; i < str.length / 2; i++) {
+        str[i] !== str[str.length -1 - i] ? console.log("not palindrom") : console.log("Palindrom");
+        return;
+    }
+}
+isPalindrome("fadwa")
+isPalindrome("racecar")
+isPalindrome(" RacE car ")
+isPalindrome("pop")
+isPalindrome("po p")
+isPalindrome(" Pop ")
