@@ -53,9 +53,22 @@
 // Create a function called maxOfTwo that takes two numbers as parameters and prints the larger of the two to the console. 
 // Use an if-else statement. Call the function with different numbers.
 
-function maxOfTwo(number1 , number2) {
-    number1 > number2 ? console.log(number1) : console.log(number2);
+// function maxOfTwo(number1 , number2) {
+//     number1 > number2 ? console.log(number1) : console.log(number2);
+//     return;
+// }
+// maxOfTwo(100 , 50)
+// maxOfTwo(4848 , 5115)
+
+//* Exercise 8: Array Sum
+// Create a function called arraySum that takes an array of numbers as a parameter and prints the sum of those numbers to the console. 
+// Use the for...of loop. Call the function with different arrays.
+function arraySum(numberArray) {
+    let sum = 0
+    for (const item of numberArray) {
+        sum += item
+    }
+    console.log(sum)
     return;
 }
-maxOfTwo(100 , 50)
-maxOfTwo(4848 , 5115)
+arraySum([1,2,3,4,5,6,7,8,9,10])
