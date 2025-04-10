@@ -117,12 +117,29 @@
 //* Exercise 12: Prime Number Checker
 // Create a function called isPrime that takes a number as a parameter and prints whether the number is a prime number or not to the console. 
 // Use loops and conditional statements. Call the function with different numbers.
-function isPrime(number) {
-        for (let index = 2; index < number; index++) {
-            number % index === 0 ? console.log("not prime") : console.log("prime");
-            break;
-            }
-        return;
+// function isPrime(number) {
+//         for (let index = 2; index < number; index++) {
+//             number % index === 0 ? console.log("not prime") : console.log("prime");
+//             break;
+//             }
+//         return;
+// }
+// isPrime(7);
+// isPrime(4);
+
+//* Exercise 13: Sum of Digits
+// Create a function called sumOfDigits that takes a positive integer as a parameter and calculates the sum of its digits. 
+// Print the result to the console.
+
+function sumOfDigits(int) {
+    let sum = 0;
+
+    while (int > 0) {
+        sum += int % 10;
+        int = Math.floor(int / 10);
+    }
+    console.log("The sum of the digits is: " + sum);
 }
-isPrime(7);
-isPrime(4);
+
+sumOfDigits(123);
+sumOfDigits(1234);
